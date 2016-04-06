@@ -38,8 +38,13 @@ const config = {
         new webpack.NoErrorsPlugin(),
         new ExtractTextPlugin(`${paths.css}bundle.css`),
         new HtmlWebpackPlugin({
-            title  : pkg.description,
-            minify : {
+            inject     : false,
+            template   : path.join(__dirname, "/node_modules/html-webpack-template/index.ejs"),
+            appMountId : "root",
+            devServer  : process.argv.indexOf("-p") === -1 ? "http://localhost:8080" : false,
+            title      : pkg.description,
+            mobile     : true,
+            minify     : {
                 collapseWhitespace            : true,
                 removeComments                : true,
                 removeRedundantAttributes     : true,
@@ -62,7 +67,6 @@ const config = {
     devtool   : "eval-source-map",
     devServer : {
         contentBase : path.join(__dirname, "/gh-pages/"),
-        noInfo      : true,
         port        : 8080,
         hot         : true
     }
