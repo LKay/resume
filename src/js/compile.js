@@ -1,3 +1,5 @@
-import styles from "../less/compile.less"
+/* Import files to process by webpack */
+import "../less/compile.less"
 
-const AAA = "test"
+/* Import applcation main file */
+import "./components/resume.js"

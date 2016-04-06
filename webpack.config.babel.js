@@ -25,7 +25,7 @@ const config = {
     },
     module : {
         loaders : [
-            { test : /\.js$/, exclude: /node_modules/, loader : "react-hot!babel-loader" },
+            { test : /\.js$/, exclude: /node_modules/, loader : "react-hot-loader!babel-loader" },
             { test : /\.css$/, loader : ExtractTextPlugin.extract("style-loader", "css-loader") },
             { test : /\.less$/, loader : ExtractTextPlugin.extract("style-loader", "css-loader!less-loader") },
             { test : /\.json$/, loader : "json-loader" },
