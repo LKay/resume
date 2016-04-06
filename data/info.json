@@ -1,4 +1,27 @@
 {
   "firstName" : "Karol",
-  "lastName"  : "Janyst"
+  "lastName"  : "Janyst",
+
+  "contacts" : [
+    {
+      "type" : "email",
+      "value" : ""
+    },
+    {
+      "type" : "phone",
+      "value" : ""
+    },
+    {
+      "type" : "facebook",
+      "value" : ""
+    },
+    {
+      "type" : "skype",
+      "value" : ""
+    },
+    {
+      "type" : "github",
+      "value" : ""
+    }
+  ]
 }
