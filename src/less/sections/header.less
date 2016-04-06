@@ -1,0 +1,56 @@
+header.top {
+  margin-top: -75px;
+  margin-bottom: 15px;
+
+  .avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    background: #ededed;
+    display: inline-block;
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+  }
+
+  .text-header {
+    border-bottom: 1px solid @body-bg;
+
+    &:after {
+      content: ' ';
+      margin-bottom : 1px;
+      border-bottom: 1px solid @body-bg;
+      display: block;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 3.4em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+    }
+
+    h2 {
+      font-size: 2.4em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+
+      .name {
+        color: @main-color;
+        margin: 0 5px;
+
+        @media print {
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}

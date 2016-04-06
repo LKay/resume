@@ -2,6 +2,7 @@ import "babel-polyfill"
 import React, { Component } from "react"
 import { render } from "react-dom"
 import { Grid, Row, Col } from "react-bootstrap"
+import Header from "./header/header.js"
 
 class Resume extends Component {
 
@@ -10,7 +11,7 @@ class Resume extends Component {
             <Grid>
                 <Row>
                     <Col xs={ 12 }>
-                        { /* Header */ }
+                        <Header />
                     </Col>
                 </Row>
                 <Row>
