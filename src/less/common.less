@@ -28,9 +28,22 @@ body{
     font-weight: 700;
     text-transform: uppercase;
 
-    &:before {
-      content: '#';
-      margin-right: 5px;
+    @media not print {
+      border-bottom: 1px solid @main-color;
+      padding-bottom: 5px;
+
+      &:before {
+        content: '#';
+        margin-right: 5px;
+      }
+    }
+
+    @media print {
+      & > span {
+        color: @main-color !important;
+        border-bottom: 2px solid @main-color;
+        padding-bottom: 3px;
+      }
     }
   }
 

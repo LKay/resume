@@ -1,15 +1,14 @@
 import React, { Component, createElement } from "react"
-import { Grid, Row, Col } from "react-bootstrap"
-import Icon from "react-fontawesome"
 import * as types from "./types.js"
 import dataInfo from "../../../../data/info.json"
+import Facebook from "./contacts/facebook.js"
 
 class Contact extends Component {
 
     renderContactItem (item, idx) {
         let content
         
-        switch (item) {
+        switch (item.type) {
             case types.CONTACT_EMAIL :
 
             case types.CONTACT_PHONE :
@@ -17,32 +16,28 @@ class Contact extends Component {
             case types.CONTACT_SKYPE :
 
             case types.CONTACT_FACEBOOK :
+                content = (<Facebook { ...item } />)
+                break
 
             case types.CONTACT_GITHUB :
 
             default :
                 content = false
         }
+
+        console.warn(content, item, types)
         
         return content && createElement("li", { key : idx }, content)
-
-                /*
-            <div key={ idx } className="contact-item">
-            <div className="icon pull-left text-center">
-            <Icon name="facebook" fixedWidth />
-        </div>
-        <div className="title pull-right">Facebook</div>
-            <div className="description pull-right">https://www.facebook.com/facebook</div>
-    </div>
-    */
     }
 
     render () {
         return (
             <div className="box clearfix">
-                <h2>Contact</h2>
+                <h2>
+                    <span>{ "Contact" }</span>
+                </h2>
 
-                <ul className="list-unstyled">
+                <ul className="contacts list-unstyled">
                     { dataInfo.contacts.map(this.renderContactItem) }
                 </ul>
             </div>

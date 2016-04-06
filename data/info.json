@@ -5,23 +5,27 @@
   "contacts" : [
     {
       "type" : "email",
-      "value" : ""
+      "value" : "karol@janyst.pl"
     },
     {
       "type" : "phone",
-      "value" : ""
-    },
-    {
-      "type" : "facebook",
-      "value" : ""
+      "value" : "+81-80-7848-3663"
     },
     {
       "type" : "skype",
-      "value" : ""
+      "value" : "karol.janyst"
+    },
+    {
+      "type" : "linkedin",
+      "value" : "karol-janyst-065a9688"
+    },
+    {
+      "type" : "facebook",
+      "value" : "lapkom"
     },
     {
       "type" : "github",
-      "value" : ""
+      "value" : "LKay"
     }
   ]
 }

@@ -1,19 +1,36 @@
-.contact-item{
-  width: 100%;
-  float: left;
+.contacts {
+
+  .contact-item {
+
+    .contact-icon {
+      padding: 10px;
+      border-right: 1px solid #aaa;
+      border-bottom: 1px solid #aaa;
+      opacity: 0.2;
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 2em;
+    }
+
+    .contact-content {
+      display: inline-block;
+
+      .title,
+      .description {
+        white-space: nowrap;
+      }
+    }
+  }
+
+
+  & > li:last-child {
+    .contact-icon {
+      border-bottom: none;
+    }
+  }
+
 }
-.contact-item .icon{
-  padding: 10px;
-  border-right: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-  opacity: 0.2;
-}
-.contact-item:last-child .icon{
-  border-bottom: none;
-}
-.contact-item .fa{
-  font-size: 2em;
-}
+
 .contact-item .title{
   width: 80%;
   width: calc(100% - 55px);
