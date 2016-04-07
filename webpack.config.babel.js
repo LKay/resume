@@ -66,7 +66,7 @@ const config = {
     resolve: {
         extensions: ["", ".js", ".json"]
     },
-    devtool   : "eval-source-map",
+    devtool   : process.argv.indexOf("-p") === -1 ? "eval-source-map" : false,
     devServer : {
         contentBase : path.join(__dirname, "/gh-pages/"),
         port        : 8080,
