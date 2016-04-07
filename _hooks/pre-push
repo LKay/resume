@@ -1,9 +1,14 @@
 #!/bin/bash
 
-if [[ $(git rev-parse --abbrev-ref HEAD) == "master"  ]]
+cur_branch=$(git rev-parse --abbrev-ref HEAD)
+if [[ $cur_branch == "gh-pages" ]]
 then
+    exit 0
+else
     npm run clean
     npm run build
+    git add gh-pages
+    git commit -m ""
     git subtree push --prefix gh-pages origin gh-pages
 fi
 exit 0
