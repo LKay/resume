@@ -21,8 +21,7 @@ const config = {
     ],
     output : {
         filename   : `${paths.js}bundle.js`,
-        path       : path.join(__dirname, "/gh-pages"),
-        publicPath : "/"
+        path       : path.join(__dirname, "/gh-pages")
     },
     module : {
         loaders : [
