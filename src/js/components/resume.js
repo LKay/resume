@@ -5,6 +5,7 @@ import { Grid, Row, Col } from "react-bootstrap"
 import Header from "./header/header.js"
 import About from "./about/about.js"
 import Experience from "./experience/experience.js"
+import Timeline from "./timeline/timeline.js"
 import Contact from "./contact/contact.js"
 import Skills from "./skills/active.js"
 import TechStack from "./skills/tech-stack.js"
@@ -24,7 +25,7 @@ class Resume extends Component {
                     <Col xs={ 12 } sm={ 8 }>
                         <About />
                         <Experience />
-                        { /* Timeline */ }
+                        <Timeline />
                     </Col>
                     <Col xs={ 12 } sm={ 4 }>
                         <Contact />

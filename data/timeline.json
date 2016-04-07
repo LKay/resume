@@ -1,0 +1,29 @@
+{
+  "timeline" : [
+    {
+      "year" : 1987,
+      "title" : "Some title",
+      "description" : "Lorem ipsum dolor sit amet"
+    },
+    {
+      "year" : 2008,
+      "title" : "Some title",
+      "description" : "Lorem ipsum dolor sit amet"
+    },
+    {
+      "year" : 2010,
+      "title" : "Some title",
+      "description" : "Lorem ipsum dolor sit amet"
+    },
+    {
+      "year" : 2012,
+      "title" : "Some title",
+      "description" : "Lorem ipsum dolor sit amet"
+    },
+    {
+      "year" : 2012,
+      "title" : "Some title",
+      "description" : "Lorem ipsum dolor sit amet"
+    }
+  ]
+}

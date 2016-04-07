@@ -37,7 +37,15 @@ class Experience extends Component {
                 </h2>
 
                 <div className="box-content">
-                    { dataExperience.jobs.sort((a, b) => b.from - a.from).map(this.renderJobItem) }
+                    {
+                        dataExperience.jobs
+                            .sort((a, b) => {
+                                const from = b.from - a.from
+                                const to = b.to - a.to
+                                return from !== 0 ? from : to
+                            })
+                            .map(this.renderJobItem)
+                    }
                 </div>
             </div>
         )
