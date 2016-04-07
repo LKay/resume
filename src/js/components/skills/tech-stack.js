@@ -1,10 +1,11 @@
 import React, { Component, createElement } from "react"
 import dataSkills from "../../../../data/skills.json"
 import DevIcon from "../common/devicon.js"
+import Icon from "react-fontawesome"
 
 class TechStack extends Component {
 
-    renderContactItem (item, idx) {
+    renderTechItem (item, idx) {
         return (
             <span key={ idx } className="tech">
                 <DevIcon name={ item.icon } className="icon" />
@@ -17,11 +18,13 @@ class TechStack extends Component {
         return (
             <div className="box">
                 <h2>
+                    <Icon name="cogs" fixedWidth />
                     <span>{ "Tech Stack" }</span>
                 </h2>
-
-                <div className="tech-stack">
-                    { dataSkills.stack.map(this.renderContactItem) }
+                <div className="box-content">
+                    <div className="tech-stack">
+                        { dataSkills.stack.sort((a, b) => a.text.localeCompare(b.text)).map(this.renderTechItem) }
+                    </div>
                 </div>
             </div>
         )

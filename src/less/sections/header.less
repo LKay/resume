@@ -16,13 +16,23 @@ header.top {
       height: 150px;
       border-radius: 50%;
     }
+
+    @media print {
+      width: 130px;
+      height: 130px;
+
+      img {
+        width: 120px;
+        height: 120px;
+      }
+    }
   }
 
   .text-header {
     border-bottom: 1px solid @body-bg;
 
     &:after {
-      content: ' ';
+      content: none;
       margin-bottom : 1px;
       border-bottom: 1px solid @body-bg;
       display: block;
@@ -48,7 +58,7 @@ header.top {
         margin: 0 5px;
 
         @media print {
-          font-size: 1.4em;
+          font-size: 1.2em;
           color: @main-color !important;
         }
       }

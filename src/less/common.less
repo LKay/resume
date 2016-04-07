@@ -41,25 +41,32 @@ body{
     font-size: 1.8em;
     font-weight: 700;
     text-transform: uppercase;
+    border-bottom: 1px solid @main-color;
+
+    & > span:first-child {
+      margin-right: 5px;
+    }
 
     @media not print {
-      border-bottom: 1px solid @main-color;
       padding-bottom: 5px;
-
-      &:before {
-        content: '#';
-        margin-right: 5px;
-      }
     }
 
     @media print {
       padding-bottom: 8px;
+      font-size: 1.6em;
+      display: inline-block;
 
       & > span {
         color: @main-color !important;
-        border-bottom: 2px solid @main-color;
-        padding-bottom: 3px;
       }
+    }
+  }
+
+  .box-content {
+    padding: 0 10px;
+
+    @media print {
+      padding: 0 5px;
     }
   }
 

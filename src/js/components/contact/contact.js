@@ -1,7 +1,7 @@
 import React, { Component, createElement } from "react"
 import * as types from "./types.js"
 import dataInfo from "../../../../data/info.json"
-
+import Icon from "react-fontawesome"
 import Email from "./contacts/email.js"
 import Phone from "./contacts/phone.js"
 import Skype from "./contacts/skype.js"
@@ -51,12 +51,14 @@ class Contact extends Component {
         return (
             <div className="box clearfix">
                 <h2>
+                    <Icon name="envelope" fixedWidth />
                     <span>{ "Contact" }</span>
                 </h2>
-
-                <ul className="contacts list-unstyled">
-                    { dataInfo.contacts.map(this.renderContactItem) }
-                </ul>
+                <div className="box-content">
+                    <ul className="contacts list-unstyled">
+                        { dataInfo.contacts.map(this.renderContactItem) }
+                    </ul>
+                </div>
             </div>
         )
     }

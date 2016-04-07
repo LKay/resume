@@ -5,6 +5,7 @@ import { Grid, Row, Col } from "react-bootstrap"
 import Header from "./header/header.js"
 import Contact from "./contact/contact.js"
 import TechStack from "./skills/tech-stack.js"
+import Languages from "./skills/languages.js"
 
 class Resume extends Component {
 
@@ -26,7 +27,7 @@ class Resume extends Component {
                         <Contact />
                         { /* Skills - Main */ }
                         <TechStack />
-                        { /* Skills - Languages */ }
+                        <Languages />
                     </Col>
                 </Row>
             </Grid>

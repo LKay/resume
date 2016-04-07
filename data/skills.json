@@ -1,6 +1,5 @@
 {
   "stack" : [
-    { "icon" : "scala", "text" : "Scala" },
     { "icon" : "aws", "text" : "Amazon Web Services" },
     { "icon" : "clojure_alt", "text" : "Clojure" },
     { "icon" : "docker", "text" : "Docker" },
@@ -30,5 +29,14 @@
     { "icon" : "bitbucket", "text" : "BitBucket" },
     { "icon" : "github_badge", "text" : "GitHub" },
     { "icon" : "python", "text" : "Python" }
+  ],
+
+  "languages" : [
+    { "level" : 5, "name" : "Polish" },
+    { "level" : 5, "name" : "English" },
+    { "level" : 3, "name" : "Japanese" },
+    { "level" : 1, "name" : "Korean" },
+    { "level" : 1, "name" : "German" },
+    { "level" : 1, "name" : "Russian" }
   ]
 }
