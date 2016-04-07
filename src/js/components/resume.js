@@ -4,6 +4,7 @@ import { render } from "react-dom"
 import { Grid, Row, Col } from "react-bootstrap"
 import Header from "./header/header.js"
 import Contact from "./contact/contact.js"
+import TechStack from "./skills/tech-stack.js"
 
 class Resume extends Component {
 
@@ -16,15 +17,15 @@ class Resume extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={ 12 } sm={ 7 }>
+                    <Col xs={ 12 } sm={ 8 }>
                         { /* About */ }
                         { /* Experience */ }
                         { /* Timeline */ }
                     </Col>
-                    <Col xs={ 12 } sm={ 5 }>
+                    <Col xs={ 12 } sm={ 4 }>
                         <Contact />
                         { /* Skills - Main */ }
-                        { /* Skills - Stack */ }
+                        <TechStack />
                         { /* Skills - Languages */ }
                     </Col>
                 </Row>

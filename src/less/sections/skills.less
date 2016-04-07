@@ -1,3 +1,46 @@
+.tech-stack {
+  padding: 0 10px;
+
+  @media print {
+    padding: 0 5px;
+  }
+
+  .tech {
+    background-color: lighten(@main-color, 5);
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 3px 7px;
+    vertical-align: top;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    & > * {
+      vertical-align: middle;
+      line-height: normal;
+    }
+
+    .icon {
+      font-size: 1.5em;
+    }
+
+    @media print {
+      opacity: 0.7;
+      font-size: 1.1em;
+      margin-right: 0;
+      margin-bottom: 3px;
+
+      &:not(:last-child):after {
+        content: ', '
+      }
+
+      .icon {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
 /*******************************************
 SKILLS
 *******************************************/
