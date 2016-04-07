@@ -1,12 +1,23 @@
 import React, { Component } from "react"
 import { Grid, Row, Col } from "react-bootstrap"
 import dataInfo from "../../../../data/info.json"
+import Icon from "react-fontawesome"
 
 class Header extends Component {
+
+    onClickPrint = (e) => {
+        e.preventDefault()
+        global.print()
+    };
 
     render () {
         return (
             <header className="top text-center">
+                <div className="print hidden-print">
+                    <a href="#" title="Print Resume" onClick={ this.onClickPrint }>
+                        <Icon name="print" fixedWidth />
+                    </a>
+                </div>
                 <div className="avatar">
                     <img src={ require("../../../images/avatar.jpg") } alt="avatar" />
                 </div>
