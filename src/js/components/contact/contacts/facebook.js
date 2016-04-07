@@ -7,14 +7,14 @@ class Facebook extends ContactTwoLine {
         value : React.PropTypes.string.isRequired
     };
 
-    icon  = "facebook"
+    icon  = "facebook";
     title = "Facebook";
 
     getLink () {
         const { value } = this.props
 
         return (
-            <a href={ value } target="_blank">{ `facebook.com/${value}` }</a>
+            <a href={ `https://www.facebook.com/${value}` } target="_blank">{ `facebook.com/${value}` }</a>
         )
     }
 

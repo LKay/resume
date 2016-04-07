@@ -25,7 +25,7 @@ class ContactTwoLine extends Component {
 
     render () {
         return (
-            <div className="contact-item contact-two-line">
+            <div className="contact-item contact-two-lines">
                 <div className="contact-icon text-center">
                     <Icon name={ this.icon } fixedWidth />
                 </div>
