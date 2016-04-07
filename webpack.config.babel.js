@@ -14,7 +14,7 @@ const paths = {
 }
 
 const config = {
-    entry : [
+    entry : process.argv.indexOf("-p") !== -1 ? [path.join(__dirname, "/src/js/compile.js")] : [
         "webpack-dev-server/client?http://localhost:8080/",
         "webpack/hot/only-dev-server",
         path.join(__dirname, "/src/js/compile.js")
