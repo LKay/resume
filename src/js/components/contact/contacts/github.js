@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import ContactTwoLine from "./contact-two-line.js"
 
 class GitHub extends ContactTwoLine {
@@ -7,7 +7,7 @@ class GitHub extends ContactTwoLine {
         value : React.PropTypes.string.isRequired
     };
 
-    icon  = "github";
+    icon = "github";
     title = "GitHub";
 
     getLink () {

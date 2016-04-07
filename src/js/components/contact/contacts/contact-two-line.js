@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { Row, Col } from "react-bootstrap"
 import Icon from "react-fontawesome"
 
 class ContactTwoLine extends Component {
@@ -12,7 +11,7 @@ class ContactTwoLine extends Component {
         value : false
     };
 
-    icon  = false;
+    icon = false;
     title = false;
 
     getLink () {

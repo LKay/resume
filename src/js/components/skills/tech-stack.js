@@ -1,4 +1,4 @@
-import React, { Component, createElement } from "react"
+import React, { Component } from "react"
 import dataSkills from "../../../../data/skills.json"
 import DevIcon from "../common/devicon.js"
 import Icon from "react-fontawesome"

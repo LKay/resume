@@ -33,7 +33,7 @@ class Active extends Component {
     state = {
         inViewPort : false
     };
-    
+
     componentDidMount () {
         throttleScroll()
         global.addEventListener("scrollThrottled", this.checkViewPort)
@@ -51,9 +51,9 @@ class Active extends Component {
 
         const el = findDOMNode(this.refs.skills)
         const height = el.getBoundingClientRect().height
-        const inViewPort = withinviewport(el, { sides: "top bottom", top : -height + 10, bottom : -height + 30 });
+        const inViewPort = withinviewport(el, { sides : "top bottom", top : -height + 10, bottom : -height + 30 })
 
-        this.setState({ inViewPort },  () => {
+        this.setState({ inViewPort }, () => {
             if (inViewPort) {
                 global.removeEventListener("scrollThrottled", this.checkViewPort)
             }

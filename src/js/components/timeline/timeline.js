@@ -1,8 +1,7 @@
-import React, { Component, createElement } from "react"
+import React, { Component } from "react"
 import { Row, Col } from "react-bootstrap"
 import dataTimeline from "../../../../data/timeline.json"
 import Icon from "react-fontawesome"
-import classNames from "classnames"
 
 class Timeline extends Component {
 
