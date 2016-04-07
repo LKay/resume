@@ -3,6 +3,7 @@ import path from "path"
 import HtmlWebpackPlugin from "html-webpack-plugin"
 import ExtractTextPlugin from "extract-text-webpack-plugin"
 import LessPluginCleanCSS from "less-plugin-clean-css"
+import autoprefixer from "autoprefixer"
 import pkg from "./package.json"
 
 const paths = {
@@ -26,7 +27,7 @@ const config = {
     module : {
         loaders : [
             { test : /\.js$/, exclude: /node_modules/, loader : "react-hot-loader!babel-loader" },
-            { test : /\.css$/, loader : ExtractTextPlugin.extract("style-loader", "css-loader") },
+            { test : /\.css$/, loader : ExtractTextPlugin.extract("style-loader", "css-loader!postcss-loader") },
             { test : /\.less$/, loader : ExtractTextPlugin.extract("style-loader", "css-loader!less-loader") },
             { test : /\.json$/, loader : "json-loader" },
             { test : /\.(eot|svg|ttf|woff|woff2)/, loader : `file-loader?name=${paths.fonts}[name].[ext]` },
@@ -61,6 +62,7 @@ const config = {
             })
         ]
     },
+    postcss: [ autoprefixer({ browsers: ["last 2 versions"] }) ],
     resolve: {
         extensions: ["", ".js", ".json"]
     },

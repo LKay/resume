@@ -1,4 +1,14 @@
 {
+  "active" : [
+    { "icon" : "javascript_badge", "level" : 3, "text" : "Javascript" },
+    { "icon" : "html5", "level" : 3, "text" : "HTML5" },
+    { "icon" : "css3", "level" : 2, "text" : "CSS3" },
+    { "icon" : "nodejs_small", "level" : 2, "text" : "NodeJS" },
+    { "icon" : "scala", "level" : 2, "text" : "Scala" },
+    { "icon" : "clojure_alt", "level" : 1, "text" : "Clojure" },
+    { "icon" : "php", "level" : 2, "text" : "PHP" }
+  ],
+
   "stack" : [
     { "icon" : "aws", "text" : "Amazon Web Services" },
     { "icon" : "clojure_alt", "text" : "Clojure" },
@@ -28,7 +38,8 @@
     { "icon" : "npm", "text" : "NPM" },
     { "icon" : "bitbucket", "text" : "BitBucket" },
     { "icon" : "github_badge", "text" : "GitHub" },
-    { "icon" : "python", "text" : "Python" }
+    { "icon" : "python", "text" : "Python" },
+    { "icon" : "bootstrap", "text" : "Bootstrap" }
   ],
 
   "languages" : [

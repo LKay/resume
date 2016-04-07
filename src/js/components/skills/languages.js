@@ -38,7 +38,7 @@ class Languages extends Component {
 
                 <div className="box-content">
                     <ul className="languages list-unstyled">
-                        { dataSkills.languages.sort((a, b) => b - a).map(this.renderLanguageItem) }
+                        { dataSkills.languages.sort((a, b) => b.level - a.level).map(this.renderLanguageItem) }
                     </ul>
                 </div>
             </div>
