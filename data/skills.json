@@ -41,7 +41,8 @@
     { "icon" : "python", "text" : "Python" },
     { "icon" : "bootstrap", "text" : "Bootstrap" },
     { "icon" : "less", "text" : "Less" },
-    { "icon" : "sass", "text" : "SASS" }
+    { "icon" : "sass", "text" : "SASS" },
+    { "icon" : "perl", "text" : "Perl" }
   ],
 
   "languages" : [
