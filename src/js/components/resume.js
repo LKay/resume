@@ -3,6 +3,7 @@ import React, { Component } from "react"
 import { render } from "react-dom"
 import { Grid, Row, Col } from "react-bootstrap"
 import Header from "./header/header.js"
+import About from "./about/about.js"
 import Experience from "./experience/experience.js"
 import Contact from "./contact/contact.js"
 import Skills from "./skills/active.js"
@@ -21,7 +22,7 @@ class Resume extends Component {
                 </Row>
                 <Row>
                     <Col xs={ 12 } sm={ 8 }>
-                        { /* About */ }
+                        <About />
                         <Experience />
                         { /* Timeline */ }
                     </Col>

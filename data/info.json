@@ -2,6 +2,8 @@
   "firstName" : "Karol",
   "lastName"  : "Janyst",
 
+  "about" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus neque justo, condimentum a purus ut, tincidunt molestie nisi. Fusce tristique mi est. Praesent id enim malesuada, finibus diam eu, hendrerit orci. Nunc ac egestas odio, sed molestie ipsum. Duis vel volutpat justo. Phasellus ultricies leo id neque dictum, vel sodales risus sollicitudin. Donec viverra augue tortor, ac faucibus justo cursus id. Suspendisse iaculis placerat convallis. Cras tempor purus purus.",
+
   "contacts" : [
     {
       "type" : "email",

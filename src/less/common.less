@@ -34,7 +34,11 @@ body{
 }
 
 .box{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+
+  @media print {
+    margin-bottom: 15px;
+  }
 
   h2 {
     color: @main-color;
@@ -71,7 +75,8 @@ body{
   }
 
   p {
-    font-size: 1.3em;
-    line-height: 1.5em;
+    text-indent: 15px;
+    font-size: 1.2em;
+    line-height: 1.6em;
   }
 }
