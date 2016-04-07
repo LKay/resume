@@ -1,22 +1,47 @@
-/*******************************************
-EXPERIENCES
-*******************************************/
 .job{
   margin-bottom: 15px;
-}
-.job .where{
-  font-size: 1.4em;
-  font-weight: bold;
-}
-.job .year{
-  font-size: 1.3em;
-  opacity: 0.7;
-}
-.job .profession{
-  font-size: 1.6em;
-  font-weight: bold;
-}
-.job .description{
-  font-size: 1.2em;
-  line-height: 1.5em;
+
+  .company {
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+
+  .location,
+  .year {
+    font-size: 1.1em;
+    opacity: 0.7;
+
+    & > span:first-child {
+      margin-right : 3px;
+    }
+  }
+
+  .location {
+    margin: 3px 0;
+
+    & > span:last-child {
+      font-style: italic;
+    }
+  }
+
+  .profession {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .description {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+
+  @media print {
+    .profession {
+      font-size: 1.4em;
+    }
+
+    .description {
+      font-size: 1.0em;
+    }
+  }
 }

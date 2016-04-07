@@ -13,10 +13,14 @@ class Header extends Component {
                 <div className="text-header">
                     <h1 className="hidden-print">{ "Hello, stranger!" }</h1>
                     <h2>
-                        <span className="hidden-print">{ "my name is" }</span>
-                        <span className="name">{ dataInfo.firstName }</span>
-                        <span className="name visible-print-inline">{ dataInfo.lastName }</span>
-                        <span className="hidden-print">{ "and this is my resume" }</span>
+                        <p>
+                            <span className="hidden-print">{ "my name is" }</span>
+                            <span className="name">{ dataInfo.firstName }</span>
+                            <span className="name visible-print-inline">{ dataInfo.lastName }</span>
+                        </p>
+                        <p className="hidden-print">
+                            <span>{ "I am software developer and this is my resume" }</span>
+                        </p>
                     </h2>
                 </div>
             </header>

@@ -22,6 +22,27 @@
       }
     }
 
+    @media print {
+      .bar {
+        background: none;
+        box-shadow: inset 0 0 0 1000px @main-color;
+        color: rgba(0, 0, 0, 0);
+        text-shadow: 0 0 0 #fff;
+
+        &.proficent {
+          width: 33.333%;
+        }
+
+        &.advanced {
+          width: 66.666%;
+        }
+
+        &.expert {
+          width: 100%;
+        }
+      }
+    }
+
     .skill {
       padding: 5px 0;
 
@@ -133,8 +154,9 @@
     }
 
     @media print {
-      opacity: 0.7;
-      font-size: 1.1em;
+      font-color: @text-color !important;
+      background-color: transparent;
+      font-size: 1.2em;
       margin-right: 0;
       margin-bottom: 3px;
 
