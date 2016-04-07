@@ -39,7 +39,9 @@
     { "icon" : "bitbucket", "text" : "BitBucket" },
     { "icon" : "github_badge", "text" : "GitHub" },
     { "icon" : "python", "text" : "Python" },
-    { "icon" : "bootstrap", "text" : "Bootstrap" }
+    { "icon" : "bootstrap", "text" : "Bootstrap" },
+    { "icon" : "less", "text" : "Less" },
+    { "icon" : "sass", "text" : "SASS" }
   ],
 
   "languages" : [

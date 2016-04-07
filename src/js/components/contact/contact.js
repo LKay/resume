@@ -49,7 +49,7 @@ class Contact extends Component {
 
     render () {
         return (
-            <div className="box clearfix">
+            <div className="box">
                 <h2>
                     <Icon name="envelope" fixedWidth />
                     <span>{ "Contact" }</span>
