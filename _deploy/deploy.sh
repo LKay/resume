@@ -16,6 +16,6 @@ else
     git commit -m "Deploy gh-pages"
     git subtree push --prefix gh-pages origin gh-pages
     git checkout $curr_branch
-    # git branch -d $tmp_branch
+    git branch -D $tmp_branch
 fi
 exit 0
