@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if [[ $(git rev-parse --abbrev-ref HEAD) == "master"  ]]
-then
-    npm run clean
-    npm run build
-    git subtree push --prefix gh-pages origin gh-pages
-fi
-exit 0
