@@ -44,25 +44,25 @@
 
     .skill {
       padding: 5px 0;
-
-      & > * {
-        vertical-align: middle;
-        line-height: normal;
-      }
-
+      
       .bar {
         color: #fff;
         background-color: @main-color;
-        padding: 4px;
-        font-size: 1.0em;
+        padding: 5px 4px;
+        font-size: 1.2em;
         font-weight: 700;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         transition: width 0.8s ease-in-out;
 
-        & > span {
-          font-size: 1.3em;
+        & > * {
+          vertical-align: middle;
+          line-height: normal;
+        }
+
+        & > span:first-child {
+          font-size: 1.4em;
           margin-right: 3px;
         }
 
