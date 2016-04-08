@@ -8,7 +8,7 @@ class TechStack extends Component {
     renderTechItem (item, idx) {
         return (
             <span key={ idx } className="tech">
-                <DevIcon name={ item.icon } className="icon" />
+                { item.icon && <DevIcon name={ item.icon } className="icon" /> }
                 <span>{ ` ${item.text}` }</span>
             </span>
         )

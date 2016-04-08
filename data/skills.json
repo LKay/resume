@@ -1,11 +1,11 @@
 {
   "active" : [
-    { "icon" : "javascript_badge", "level" : 3, "text" : "Javascript" },
+    { "icon" : "javascript", "level" : 3, "text" : "Javascript" },
     { "icon" : "html5", "level" : 3, "text" : "HTML5" },
     { "icon" : "css3", "level" : 2, "text" : "CSS3" },
     { "icon" : "nodejs_small", "level" : 2, "text" : "NodeJS" },
     { "icon" : "scala", "level" : 2, "text" : "Scala" },
-    { "icon" : "clojure_alt", "level" : 1, "text" : "Clojure" },
+    { "icon" : "clojure", "level" : 1, "text" : "Clojure" },
     { "icon" : "php", "level" : 2, "text" : "PHP" }
   ],
 
@@ -13,8 +13,6 @@
     { "icon" : "aws", "text" : "Amazon Web Services" },
     { "icon" : "clojure_alt", "text" : "Clojure" },
     { "icon" : "docker", "text" : "Docker" },
-    { "icon" : "scala", "text" : "Scala" },
-    { "icon" : "php", "text" : "PHP" },
     { "icon" : "react", "text" : "React JS" },
     { "icon" : "backbone", "text" : "Backbone JS" },
     { "icon" : "angular", "text" : "Angular" },
@@ -42,7 +40,16 @@
     { "icon" : "bootstrap", "text" : "Bootstrap" },
     { "icon" : "less", "text" : "Less" },
     { "icon" : "sass", "text" : "SASS" },
-    { "icon" : "perl", "text" : "Perl" }
+    { "icon" : "perl", "text" : "Perl" },
+    { "icon" : "jira", "text" : "JIRA" },
+    { "icon" : null, "text" : "Redmine" },
+    { "icon" : "java", "text" : "Java" },
+    { "icon" : "markdown", "text" : "Markdown" },
+    { "icon" : "coffeescript", "text" : "Coffeescript" },
+    { "icon" : "jquery", "text" : "jQuery" },
+    { "icon" : "jquery_ui", "text" : "jQuery UI" },
+    { "icon" : "redis", "text" : "Redis" },
+    { "icon" : "opensource", "text" : "Open Source" }
   ],
 
   "languages" : [
