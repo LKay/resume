@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import ContactTwoLine from "./contact-two-line.js"
 
 class LinkedIn extends ContactTwoLine {
@@ -7,7 +7,7 @@ class LinkedIn extends ContactTwoLine {
         value : React.PropTypes.string.isRequired
     };
 
-    icon  = "linkedin-square";
+    icon = "linkedin-square";
     title = "LinkedIn";
 
     getLink () {

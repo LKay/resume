@@ -1,8 +1,7 @@
-import React, { Component, createElement } from "react"
+import React, { Component } from "react"
 import { Row, Col } from "react-bootstrap"
 import dataExperience from "../../../../data/experience.json"
 import Icon from "react-fontawesome"
-import classNames from "classnames"
 
 class Experience extends Component {
 

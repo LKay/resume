@@ -14,7 +14,7 @@ class Contact extends Component {
 
     renderContactItem (item, idx) {
         let content
-        
+
         switch (item.type) {
             case types.CONTACT_EMAIL :
                 content = (<Email { ...item } />)
@@ -43,13 +43,13 @@ class Contact extends Component {
             default :
                 content = false
         }
-        
+
         return content && createElement("li", { key : idx }, content)
     }
 
     render () {
         return (
-            <div className="box clearfix">
+            <div className="box">
                 <h2>
                     <Icon name="envelope" fixedWidth />
                     <span>{ "Contact" }</span>

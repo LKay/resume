@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import ContactOneLine from "./contact-one-line.js"
 
 class Email extends ContactOneLine {
@@ -7,7 +7,7 @@ class Email extends ContactOneLine {
         value : React.PropTypes.string.isRequired
     };
 
-    icon  = "at";
+    icon = "at";
 
     getLink () {
         const { value } = this.props

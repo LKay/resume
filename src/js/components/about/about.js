@@ -13,7 +13,7 @@ class About extends Component {
                 </h2>
 
                 <div className="box-content">
-                    <p className="text-justify">{ dataInfo.about }</p>
+                    { dataInfo.about.split("\n").map((text, i) => <p key={ i } className="text-justify">{ text }</p>) }
                 </div>
             </div>
         )

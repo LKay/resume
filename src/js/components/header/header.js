@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import { Grid, Row, Col } from "react-bootstrap"
 import dataInfo from "../../../../data/info.json"
 import Icon from "react-fontawesome"
+import avatar from "../../../images/avatar.jpg"
 
 class Header extends Component {
 
@@ -19,7 +19,7 @@ class Header extends Component {
                     </a>
                 </div>
                 <div className="avatar">
-                    <img src={ require("../../../images/avatar.jpg") } alt="avatar" />
+                    <img src={ avatar } alt="avatar" />
                 </div>
                 <div className="text-header">
                     <h1 className="hidden-print">{ "Hello, stranger!" }</h1>

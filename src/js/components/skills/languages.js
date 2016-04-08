@@ -1,4 +1,4 @@
-import React, { Component, createElement } from "react"
+import React, { Component } from "react"
 import dataSkills from "../../../../data/skills.json"
 import Icon from "react-fontawesome"
 import classNames from "classnames"

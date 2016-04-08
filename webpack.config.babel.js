@@ -14,7 +14,7 @@ const paths = {
 }
 
 const config = {
-    entry : [
+    entry : process.argv.indexOf("-p") !== -1 ? [path.join(__dirname, "/src/js/compile.js")] : [
         "webpack-dev-server/client?http://localhost:8080/",
         "webpack/hot/only-dev-server",
         path.join(__dirname, "/src/js/compile.js")
@@ -22,7 +22,7 @@ const config = {
     output : {
         filename   : `${paths.js}bundle.js`,
         path       : path.join(__dirname, "/gh-pages"),
-        publicPath : "/"
+        publicPath : "/resume/"
     },
     module : {
         loaders : [
@@ -70,7 +70,7 @@ const config = {
     resolve: {
         extensions: ["", ".js", ".json"]
     },
-    devtool   : "eval-source-map",
+    devtool   : process.argv.indexOf("-p") === -1 ? "eval-source-map" : false,
     devServer : {
         contentBase : path.join(__dirname, "/gh-pages/"),
         port        : 8080,

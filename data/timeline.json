@@ -1,29 +1,29 @@
 {
   "timeline" : [
     {
-      "year" : 1987,
-      "title" : "Some title",
-      "description" : "Lorem ipsum dolor sit amet"
+      "year" : 2002,
+      "title" : "I got interested in programming",
+      "description" : "At the age of 15 I got interested in programming and software development for the first time. Despite I had a computer in my home since early childhood I never used it for other things than gaming before. At school one teacher showed us how to write a code in Delphi and I got really into it. From then I was learning how to write software by myself."
     },
     {
       "year" : 2008,
-      "title" : "Some title",
-      "description" : "Lorem ipsum dolor sit amet"
+      "title" : "Secondary school specializing in mathematics",
+      "description" : "I attended Emillian Konopczynski's secondary school in Warsaw, Poland. My main field of interest during that time was mathematics and IT. Thanks for that profile I didn not lose intereste in computers and programming. I was one of the developers for project made by students from our school and exchange students from school in Cologne, Germany. "
     },
     {
       "year" : 2010,
-      "title" : "Some title",
-      "description" : "Lorem ipsum dolor sit amet"
+      "title" : "First level graduation in Electrical Engineering",
+      "description" : "I graduated from Warsaw University of Technology at faculty of Automatics and Computer Engineering aquiring my first level diploma. My thesis was titled \"Implementation of mass data storage devices in Measurement Control Microsystems\" and was focused on making hardware and writing a software for Atmega128 microcontroller."
+    },
+    {
+      "year" : 2011,
+      "title" : "I got certified for PRINCE2",
+      "description" : "Due to requirement of working in a project managed by PRINCE2 guidelines, me and three other coworkers from my company at the time decided to take part in certification course. I successfully pased the exam accredited by APM Group and received PRINCE2 Foundation Certificate."
     },
     {
       "year" : 2012,
-      "title" : "Some title",
-      "description" : "Lorem ipsum dolor sit amet"
-    },
-    {
-      "year" : 2012,
-      "title" : "Some title",
-      "description" : "Lorem ipsum dolor sit amet"
+      "title" : "Second level graduation in Electrical Engineering",
+      "description" : "I remained at faculty of Automatics and Computer Engineering on Warsaw University of Technology for masters course and graduated with Master of Science degree by successfully defending my thesis with A grade. This time my thesis was focused completely on software development and was titled \"Prototype of Content Management System based on WebSQL\"."
     }
   ]
 }

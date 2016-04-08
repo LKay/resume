@@ -1,5 +1,4 @@
 import React, { Component, createElement } from "react"
-import { Container } from "react-bootstrap"
 import classNames from "classnames"
 
 class DevIcon extends Component {
