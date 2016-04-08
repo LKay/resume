@@ -51,7 +51,11 @@ const config = {
                 removeRedundantAttributes     : true,
                 removeScriptTypeAttributes    : true,
                 removeStyleLinkTypeAttributes : true
-            }
+            },
+            googleAnalytics: {
+                trackingId: "UA-76151718-1",
+                pageViewOnLoad: true
+            },
         })
     ],
     lessLoader: {
