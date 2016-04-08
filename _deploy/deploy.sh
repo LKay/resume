@@ -9,7 +9,7 @@ if [[ $(git rev-parse --abbrev-ref HEAD) -ne $tmp_branch ]]
 then
     exit 0
 else
-    sed -i "/gh-pages/d" .gitignore
+    sed -i.bak "/gh-pages/d" .gitignore
     npm run clean
     npm run build
     git add .
