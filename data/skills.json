@@ -11,7 +11,6 @@
 
   "stack" : [
     { "icon" : "aws", "text" : "Amazon Web Services" },
-    { "icon" : "clojure_alt", "text" : "Clojure" },
     { "icon" : "docker", "text" : "Docker" },
     { "icon" : "react", "text" : "React JS" },
     { "icon" : "backbone", "text" : "Backbone JS" },
@@ -49,7 +48,14 @@
     { "icon" : "jquery", "text" : "jQuery" },
     { "icon" : "jquery_ui", "text" : "jQuery UI" },
     { "icon" : "redis", "text" : "Redis" },
-    { "icon" : "opensource", "text" : "Open Source" }
+    { "icon" : "opensource", "text" : "Open Source" },
+    { "icon" : "javascript", "text" : "ES6/7" },
+    { "icon" : null, "text" : "Webpack" },
+    { "icon" : "scala", "text" : "Slick" },
+    { "icon" : null, "text" : "RESTful" },
+    { "icon" : "scala", "text" : "Play2" },
+    { "icon" : "scala", "text" : "Scalatra" },
+    { "icon" : "react", "text" : "React Native" }
   ],
 
   "languages" : [
