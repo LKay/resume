@@ -8,7 +8,7 @@ import Skype from "./contacts/skype.js"
 import LinkedIn from "./contacts/linkedin.js"
 import GitHub from "./contacts/github.js"
 import Facebook from "./contacts/facebook.js"
-
+import Website from "./contacts/website.js"
 
 class Contact extends Component {
 
@@ -38,6 +38,10 @@ class Contact extends Component {
 
             case types.CONTACT_GITHUB :
                 content = (<GitHub { ...item } />)
+                break
+
+            case types.CONTACT_WEBSITE :
+                content = (<Website { ...item } />)
                 break
 
             default :
