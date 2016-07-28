@@ -55,8 +55,8 @@
     { "icon" : "scala", "text" : "Play2" },
     { "icon" : "scala", "text" : "Scalatra" },
     { "icon" : "react", "text" : "React Native" },
-    { "icon" : "php", text" : "PHP" },
-    { "icon" : "javascript", text" : "TypeScript" }
+    { "icon" : "php", "text" : "PHP" },
+    { "icon" : "javascript", "text" : "TypeScript" }
   ],
 
   "languages" : [
